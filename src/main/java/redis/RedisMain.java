@@ -4,18 +4,18 @@ import redis.clients.jedis.Jedis;
 
 
 /**
- * Describe: ´´½¨redis¿Í»§¶Ë£¬²¢²âÊÔÁ¬½ÓÊÇ·ñÕı³£
+ * Describe: åˆ›å»ºrediså®¢æˆ·ç«¯ï¼Œå¹¶æµ‹è¯•è¿æ¥æ˜¯å¦æ­£å¸¸
  * Author:   maoxiangyi
  * Domain:   www.maoxiangyi.cn
  * Data:     2016/1/6.
  */
 public class RedisMain {
     public static void main(String[] args) {
-        //´´½¨redis¿Í»§¶Ë
+        //åˆ›å»ºrediså®¢æˆ·ç«¯
         Jedis jedis = new Jedis("127.0.0.1",6379);
-        //ÔËĞĞredis pingÃüÁî£¬Õı³£·µ»Øpong
+        //è¿è¡Œredis pingå‘½ä»¤ï¼Œæ­£å¸¸è¿”å›pong
         String response = jedis.ping();
-        //´òÓ¡½á¹û£¬Õı³£½á¹ûÎªpong
+        //æ‰“å°ç»“æœï¼Œæ­£å¸¸ç»“æœä¸ºpong
         System.out.println(response);
     }
 }

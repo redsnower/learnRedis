@@ -4,7 +4,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 /**
- * Describe: Ê±¼ä¹¤¾ßÀà
+ * Describe: æ—¶é—´å·¥å…·ç±»
  * Author:   maoxiangyi
  * Domain:   www.maoxiangyi.cn
  * Data:     2016/1/6.

@@ -5,7 +5,7 @@ import java.util.Date;
 import org.jsoup.helper.StringUtil;
 
 /**
- * Describe: ÎÄÕÂÀà
+ * Describe: æ–‡ç« ç±»
  * Author:   maoxiangyi
  * Domain:   www.maoxiangyi.cn
  * Data:     2016/1/6.
