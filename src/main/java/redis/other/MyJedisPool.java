@@ -6,9 +6,6 @@ import redis.clients.jedis.JedisPoolConfig;
 
 /**
  * Describe: redis单实例的数据库连接池
- * Author:   maoxiangyi
- * Domain:   www.maoxiangyi.cn
- * Data:     2016/1/6.
  */
 public class MyJedisPool {
     // jedis池

@@ -7,9 +7,6 @@ import java.util.List;
 /**
  * Describe: 学习Redis String数据结构
  * 主要知识点：set、get、incr、decr、mset、mget、setex、expire、exists等方法
- * Author:   maoxiangyi
- * Domain:   www.maoxiangyi.cn
- * Data:     2016/1/6.
  */
 public class StringMain {
 

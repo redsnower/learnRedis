@@ -10,9 +10,6 @@ import java.util.List;
 
 /**
  * Describe: 分布式情况下的Redis连接池
- * Author:   maoxiangyi
- * Domain:   www.maoxiangyi.cn
- * Data:     2016/1/6.
  */
 public class MyShardedJedisPool {
 

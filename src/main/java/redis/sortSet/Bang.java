@@ -10,9 +10,6 @@ import java.util.concurrent.Executors;
 /**
  * Describe: 计算双十一某电商各收集品牌销售排行榜
  *  主要知识点：线程池、SortSet.zincrby()、SortSet.zrevrange()、SortSet.zscore()、SortSet.zrevrank()
- * Author:   maoxiangyi
- * Domain:   www.maoxiangyi.cn
- * Data:     2016/1/6.
  */
 public class Bang {
 

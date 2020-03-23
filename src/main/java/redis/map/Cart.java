@@ -12,9 +12,6 @@ import java.util.Set;
 
 /**
  * Describe: 购物车service类，提供添加购物、修改购物车等功能
- * Author:   maoxiangyi
- * Domain:   www.maoxiangyi.cn
- * Data:     2016/1/6.
  */
 public class Cart {
     private Jedis jedis;

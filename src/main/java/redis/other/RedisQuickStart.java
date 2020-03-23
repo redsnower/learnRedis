@@ -4,9 +4,6 @@ import redis.clients.jedis.Jedis;
 
 /**
  * Describe: Redis快速入门
- * Author:   maoxiangyi
- * Domain:   www.maoxiangyi.cn
- * Data:     2016/1/6.
  */
 public class RedisQuickStart {
 

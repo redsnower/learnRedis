@@ -5,9 +5,6 @@ import java.util.Date;
 
 /**
  * Describe: 时间工具类
- * Author:   maoxiangyi
- * Domain:   www.maoxiangyi.cn
- * Data:     2016/1/6.
  */
 public class DateUtil {
 	

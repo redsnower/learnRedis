@@ -8,9 +8,6 @@ import java.util.Set;
 
 /**
  * Describe: 用户漏斗模型中用户转化的计算
- * Author:   maoxiangyi
- * Domain:   www.maoxiangyi.cn
- * Data:     2016/1/6.
  */
 public class Transform {
 

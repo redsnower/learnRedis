@@ -6,9 +6,6 @@ import org.jsoup.helper.StringUtil;
 
 /**
  * Describe: 文章类
- * Author:   maoxiangyi
- * Domain:   www.maoxiangyi.cn
- * Data:     2016/1/6.
  */
 public class Article {
 	private String id;

@@ -7,9 +7,6 @@ import java.util.Set;
 /**
  * Describe: 武林大会报名登记表
  *  主要知识点：sadd、smembers、sismember、scard、sinter、sunion、sdiff、
- * Author:   maoxiangyi
- * Domain:   www.maoxiangyi.cn
- * Data:     2016/1/6.
  */
 public class SetMain {
 

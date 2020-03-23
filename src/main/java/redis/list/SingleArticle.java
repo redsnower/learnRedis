@@ -7,9 +7,6 @@ import org.jsoup.select.Elements;
 
 /**
  * Describe:访问单个新闻页：http://www.huxiu.com/article/102062/1.html 需要：标题，内容
- * Author:   maoxiangyi
- * Domain:   www.maoxiangyi.cn
- * Data:     2016/1/6.
  */
 public class SingleArticle {
 

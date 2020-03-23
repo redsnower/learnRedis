@@ -4,9 +4,6 @@ import java.math.BigDecimal;
 
 /**
  * Describe: 商品JavaBean
- * Author:   maoxiangyi
- * Domain:   www.maoxiangyi.cn
- * Data:     2016/1/6.
  */
 public class Product {
     private String id;//商品编号

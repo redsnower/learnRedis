@@ -8,9 +8,6 @@ import java.util.List;
 /**
  * Describe: 这个武林故事，主要通过武林人士排队买肯德基来展现list的特性
  *  主要知识点：del、lpush、lrange、rpush、linsert、lpop、rpop、ltrim、
- * Author:   maoxiangyi
- * Domain:   www.maoxiangyi.cn
- * Data:     2016/1/6.
  */
 public class ListMain {
     public static void main(String[] args) {
