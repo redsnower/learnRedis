@@ -30,7 +30,7 @@ public class SortMain {
                     //打印用户升序排行
                     + jedis.zrank("比武成绩", name) + "           赢的场次： "
                     //打印用户的比武成绩
-                    + jedis.zscore("比武成绩", name));
+                    + jedis.zscore("比武成绩(score)", name));
         }
         System.out.println("==============================");
 
