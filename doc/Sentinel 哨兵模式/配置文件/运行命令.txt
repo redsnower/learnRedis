@@ -1,0 +1,24 @@
+docker run -p 6379:6379 --name redis6379 -v /home/chunjie/redis/config/redis_6379.conf:/etc/redis/redis_6379.conf -v /home/chunjie/redis/data:/data -d redis redis-server /etc/redis/redis_6379.conf --appendonly yes
+
+docker run -p 6380:6380 --name redis6380 -v /home/chunjie/redis/config/redis_6380.conf:/etc/redis/redis_6380.conf -v /home/chunjie/redis/data:/data -d redis redis-server /etc/redis/redis_6380.conf --appendonly yes
+
+docker run -p 6381:6381 --name redis6381 -v /home/chunjie/redis/config/redis_6381.conf:/etc/redis/redis_6381.conf -v /home/chunjie/redis/data:/data -d redis redis-server /etc/redis/redis_6381.conf --appendonly yes
+
+
+
+
+cat sentinel.conf | grep -v "#" | grep -v "^$" > redis_sentinel_26379.conf
+
+sed "s/26379/26380/g" redis_sentinel_26379.conf > redis_sentinel_26380.conf
+sed "s/26379/26381/g" redis_sentinel_26379.conf > redis_sentinel_26381.conf
+
+
+docker run -it --name sentinel_26379 -p 26379:26379 -v /home/chunjie/redis/config/redis_sentinel_26379.conf:/etc/redis/redis_sentinel_26379.conf -v /home/chunjie/redis/data:/data -d redis /bin/bash
+docker run -it --name sentinel_26380 -p 26380:26380 -v /home/chunjie/redis/config/redis_sentinel_26380.conf:/etc/redis/redis_sentinel_26380.conf -v /home/chunjie/redis/data:/data -d redis /bin/bash
+docker run -it --name sentinel_26381 -p 26381:26381 -v /home/chunjie/redis/config/redis_sentinel_26381.conf:/etc/redis/redis_sentinel_26381.conf -v /home/chunjie/redis/data:/data -d redis /bin/bash
+
+进入容器后 
+docker exec -it 容器ID  /bin/bash
+
+再执行
+redis-sentinel /etc/redis/redis_sentinel_26381.conf   //启动redis-sentinel  节点
