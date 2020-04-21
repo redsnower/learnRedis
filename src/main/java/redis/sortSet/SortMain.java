@@ -11,7 +11,8 @@ import java.util.Set;
 public class SortMain {
 
     public static void main(String[] args) {
-        Jedis jedis = new Jedis("127.0.0.1", 6379);
+        Jedis jedis = new Jedis("lv", 6379);
+        jedis.auth("123456");
         //往redis库中插入一条sortedset数据
         jedis.zadd("比武成绩", 10, "乔峰");
         jedis.zadd("比武成绩", 5, "王重阳");
@@ -20,6 +21,8 @@ public class SortMain {
         jedis.zadd("比武成绩", 5, "段誉");
         jedis.zadd("比武成绩", 4, "峨眉师太");
         jedis.zadd("比武成绩", 20, "张三丰");
+        
+        System.out.println("参与人数："+jedis.zcard("比武成绩"));
         //获取sortSet中所有的元素
         Set<String> names = jedis.zrange("比武成绩", 0, -1);
         for (String name : names) {
